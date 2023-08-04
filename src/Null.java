@@ -33,6 +33,8 @@ public class Null {
 		int[] array4 = { 10, 20, 50 };
 		
 		System.out.println(Arrays.toString(array3));
+		// 配列は .length と付けることで、配列の要素数を取得
+		System.out.println(array3.length);
 		System.out.println(Arrays.toString(array4));
 	}
 
