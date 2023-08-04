@@ -27,6 +27,13 @@ public class Null {
 		// Arrays.toStringメソッドを使用して配列を文字列に変換
 		System.out.println(Arrays.toString(array1));
 		System.out.println(Arrays.toString(array2));
+		
+		// 宣言と初期化を同時にするとき
+		int[] array3 = new int[] { 10, 20, 50 };
+		int[] array4 = { 10, 20, 50 };
+		
+		System.out.println(Arrays.toString(array3));
+		System.out.println(Arrays.toString(array4));
 	}
 
 }
