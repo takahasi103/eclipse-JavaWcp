@@ -72,6 +72,14 @@ public class Operator {
 		
 		m = !l; // 	l が false の場合に true
 		System.out.println(m);
+		
+		// 文字列の連結
+		String Hellor = "こんにちは";
+		String name = "山田";
+		String greeting;
+		
+		greeting = Hellor + name;
+		System.out.println(greeting);
 	}
 
 }
