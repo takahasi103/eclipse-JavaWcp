@@ -11,7 +11,7 @@ public class Chapter07 {
 		// 「val」を出力
 		System.out.println(val);
 		// 変数「val」を「5」倍する
-		val = val * 5;
+		val *= 5;
 		// 「val」を出力
 		System.out.println(val);
 		// boolean型の変数「bool」を宣言。同時に「valは50と等しい」の結果を代入
