@@ -19,6 +19,7 @@ public class Switch {
 		default:
 			System.out.println("がんばろう！");
 		}
+		
 		Vals val2 = Vals.EXCELLENT;
 		switch (val2) {
 		case EXCELLENT:
