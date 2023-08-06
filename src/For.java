@@ -11,6 +11,22 @@ public class For {
         for (int number : array) {
             System.out.println("For02 = " + number);
         }
+        
+        // break文
+        for (int count = 0; count < 5; count++) {
+            if (count == 2) {
+                break; // countが2の場合、for文を終了
+            }
+            System.out.println("Break01 = " + count);
+        }
+        
+        // continue文
+        for (int count = 0; count < 5; count++) {
+            if (count == 2) {
+            continue; // countが2の場合、この後の処理をスキップ
+        }
+            System.out.println("Continue01 = " + count);
+        }
 	}
 
 }
