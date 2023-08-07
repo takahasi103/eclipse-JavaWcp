@@ -5,17 +5,23 @@ public class Operator {
 		int a = 15;
 		int b;
 		b = a + 3;  // c = 18
+		System.out.println(b);
 		b = a - 5;  // c = 10
+		System.out.println(b);
 		b = a * 2;  // c = 20
+		System.out.println(b);
 		b = a / 6;  // c = 2
+		System.out.println(b);
 		b = a % 4;  // c = 3
 		
 		// インクリメント・デクリメント演算子
 		int c;
 		c = 10;
 		c++;  //  a = 11 インクリメント
+		System.out.println(c);
 		c = 10;
 		c--;  // a = 9 デクリメント
+		System.out.println(c);
 		
 		// 前置と後置
 		int d;
