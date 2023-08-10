@@ -2,7 +2,7 @@ package practice;
 
 public interface Flying {
 	// メソッド（抽象メソッド）
-		void fly();
+	void fly();
 
 	// defaultメソッド
 	default void powerOff() {
