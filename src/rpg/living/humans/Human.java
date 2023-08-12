@@ -1,12 +1,11 @@
-package rpg.living.monster;
+package rpg.living.humans;
 
 import rpg.Dice;
 import rpg.living.Living;
 
-public abstract class Monster extends Living {
-
+public abstract class Human extends Living {
 	// コンストラクタ
-	public Monster(String name, String weapon) {
+	public Human(String name, String weapon) {
 		// Livingクラスで定義したコンストラクタを利用する
 		super(name, weapon);
 	}
@@ -19,7 +18,10 @@ public abstract class Monster extends Living {
 		int damage = num * getOffensive();
 		// 相手のHPをダメージ値だけ減らす
 		target.setHp(target.getHp() - damage);
+		// 自分の攻撃力を1だけ減らす
+		setOffensive(getOffensive() - 1);
 		// コンソールにステータスを表示
-		System.out.println(getName() + "が" + getWeapon() + "で攻撃! " + target.getName() + "に" + damage + "のダメージを与えた。");
+		System.out.println(getName() + "が" + target.getName() + "に" + damage + "のダメージを与えた。");
+	    System.out.println("しかし、自分の攻撃力も1減少した。");
 	}
 }
