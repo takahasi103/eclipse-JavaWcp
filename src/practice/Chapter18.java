@@ -29,7 +29,23 @@ public class Chapter18 {
 		実行結果
 		1,2,3,4,5,6,7,...98,99,100
 	*/
-	
+		// 1から100までの値StringBufferに格納する
+		StringBuffer sb2 = new StringBuffer();
+		for (int i = 1; i <= 100; i++) {
+			sb2.append(i).append(",");
+		}
+		// 最後のカンマを除去
+		sb2.deleteCharAt(sb2.length() - 1);
+
+		// カンマ区切りの文字列を出力
+		String data = new String(sb2);
+		System.out.println(data);
+
+		// 文字列をカンマで分割する
+		String[] dataArray = data.split(",");
+		for (String d : dataArray) {
+			System.out.println(d);
+		}
 		
 		
 	/* 確認問題03
