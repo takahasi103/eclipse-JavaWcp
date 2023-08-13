@@ -7,7 +7,10 @@ import rpg.living.humans.Brave;
 import rpg.living.humans.Fighter;
 import rpg.living.humans.Human;
 import rpg.living.humans.Wizard;
+import rpg.living.monsters.Dragon;
 import rpg.living.monsters.Monster;
+import rpg.living.monsters.Oak;
+import rpg.living.monsters.Slime;
 
 public class Main {
 	public static void main(String[] args) {
@@ -27,12 +30,17 @@ public class Main {
         humans.add(fighter);
         humans.add(wizard);
 		// Slime（スライム）, Oak（オーク）, Dragon（ドラゴン）クラスの各インスタンスを生成
+        Slime slime = new Slime("キングスライム", "体当たり");
+        Oak oak = new Oak("オークキング", "槍");
+        Dragon dragon = new Dragon("紅龍", "炎");
 
 		// モンスターグループのリストを空で生成
 		List<Monster> monsters = new ArrayList<>();
 		
         // スライム、オーク、ドラゴンをモンスターグループのリストに追加
-
+		monsters.add(slime);
+        monsters.add(oak);
+        monsters.add(dragon);
 		// 現在の各グループの状態を一覧表示
 		showGroupInfos(humans, monsters);
 
