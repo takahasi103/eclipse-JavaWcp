@@ -5,6 +5,11 @@ package inner_class_sample;
 //	「蹴る」メソッドを実装し呼び出してみてください。
 //	メソッドの動作はprintlnメソッドを用いて「蹴る」という文字列を出力するものとします。
 
-public class Human {
 
+public class Human {
+	public class HumanLeg {
+		public void kick() {
+			System.out.println("蹴る");
+	    }
+	}
 }
