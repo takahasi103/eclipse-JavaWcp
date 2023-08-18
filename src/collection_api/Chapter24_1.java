@@ -21,5 +21,10 @@ public class Chapter24_1 {
 
         // 表示してみる
         System.out.println(list1); // ["りんご", "バナナ", "みかん"]
+        
+        // 要素を取得する
+        String item = list1.get(0);
+        System.out.println(item);
+        
     }
 }
