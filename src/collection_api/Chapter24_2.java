@@ -22,6 +22,11 @@ public class Chapter24_2 {
 		// 登録済みのキーで追加すると上書きされる
 		map1.put(0, "マスカット");
 		System.out.println(map1);
+		
+		// 要素の取得
+		// 要素を取得するには getメソッドを使います。
+		System.out.println(map1.get(0)); // マスカットを返す
+		System.out.println(map1.get(1)); // nullを返す
 	}
 
 }
