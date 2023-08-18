@@ -26,5 +26,14 @@ public class Chapter24_1 {
         String item = list1.get(0);
         System.out.println(item);
         
+        // 要素の存在チェック
+        // ある要素がリストに含まれるか確認するには containsメソッドを使います。
+        // 戻り値はbooleanです。
+        // 存在チェック (trueを返す)
+        System.out.println(list1.contains("バナナ"));
+
+        // 存在チェック (falseを返す)
+        System.out.println(list1.contains("なし"));
+        
     }
 }
