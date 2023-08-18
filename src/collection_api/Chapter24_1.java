@@ -38,5 +38,17 @@ public class Chapter24_1 {
         // 要素数の取得
         // コレクションの要素数の合計を取得するには、 sizeメソッドを使います。
         System.out.println(list1.size());
+        
+        // 要素の削除
+        // 要素を削除するにはremoveメソッドを使います。
+        // 要素を削除する (要素が文字列の場合、文字列として同じであれば削除されます)
+        System.out.println(list1.remove("バナナ")); // 戻り値はtrue
+        System.out.println(list1.remove("なし")); // 何もしない、戻り値はfalse
+        System.out.println(list1);
+        
+        // 位置を指定して要素を削除する
+        System.out.println(list1.remove(0)); //戻り値は"りんご"
+        // System.out.println(list1.remove(5)); // コレクションの要素数より大きい位置を指定すると実行時エラー
+        System.out.println(list1);
     }
 }
