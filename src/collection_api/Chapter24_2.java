@@ -35,6 +35,10 @@ public class Chapter24_2 {
 		// 値の存在チェック (falseを返す)
 		System.out.println(map1.containsValue("ぶどう"));
 		
+		// 要素数の取得
+		// コレクションの要素数の合計を取得するには、 sizeメソッドを使います。
+		System.out.println(map1.size());
+		
 	}
 
 }
