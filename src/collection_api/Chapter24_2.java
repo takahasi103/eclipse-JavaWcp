@@ -27,6 +27,14 @@ public class Chapter24_2 {
 		// 要素を取得するには getメソッドを使います。
 		System.out.println(map1.get(0)); // マスカットを返す
 		System.out.println(map1.get(1)); // nullを返す
+		
+		// 要素の存在チェック
+		// ある要素が含まれるか確認するにはcontainsKeyやcontainsValueを使います。
+		// キーの存在チェック (trueを返す)
+		System.out.println(map1.containsKey(0));
+		// 値の存在チェック (falseを返す)
+		System.out.println(map1.containsValue("ぶどう"));
+		
 	}
 
 }
