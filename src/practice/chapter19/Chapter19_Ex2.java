@@ -1,5 +1,6 @@
 package practice.chapter19;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -25,5 +26,6 @@ public class Chapter19_Ex2 {
 			// printStackTraceで例外を出力
 			e.printStackTrace();
 		}
+	}
 }
 
