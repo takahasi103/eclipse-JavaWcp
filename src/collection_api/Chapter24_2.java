@@ -39,6 +39,18 @@ public class Chapter24_2 {
 		// コレクションの要素数の合計を取得するには、 sizeメソッドを使います。
 		System.out.println(map1.size());
 		
+		// 要素の削除
+		// 要素を削除するにはremoveメソッドを使います。
+		// キーのみか、キーと値の両方の指定ができます。
+		// キーを指定して要素を削除する
+		System.out.println(map1.remove(0)); // 戻り値は"ぶどう"
+		System.out.println(map1.remove(1)); // 何もしない、戻り値はnull
+		System.out.println(map1);
+		
+		// キーと値を指定して要素を削除する
+		System.out.println(map1.remove(3, "もも")); // 戻り値はtrue
+		System.out.println(map1.remove(3, "なし")); // 何もしない、戻り値はfalse
+		System.out.println(map1);
 	}
 
 }
