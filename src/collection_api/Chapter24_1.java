@@ -35,5 +35,8 @@ public class Chapter24_1 {
         // 存在チェック (falseを返す)
         System.out.println(list1.contains("なし"));
         
+        // 要素数の取得
+        // コレクションの要素数の合計を取得するには、 sizeメソッドを使います。
+        System.out.println(list1.size());
     }
 }
