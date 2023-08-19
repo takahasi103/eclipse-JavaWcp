@@ -28,5 +28,11 @@ public class Chapter24_3 {
 		// 存在チェック (falseを返す)
 		System.out.println(set1.contains("なし"));
 		
+		// 要素数の取得
+		// コレクションの要素数の合計を取得するには、 sizeメソッドを使います。
+		System.out.println("set1 " + set1.size());
+		System.out.println("set2 " + set2.size());
+		
+		
 	}
 }
