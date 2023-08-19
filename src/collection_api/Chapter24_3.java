@@ -21,5 +21,12 @@ public class Chapter24_3 {
 		set1.add("メロン");
 		System.out.println("set1 " + set1);
 		
+		// 要素の存在チェック
+		// ある要素がSetに含まれるか確認するには containsメソッドを使います。
+		// 存在チェック (trueを返す)
+		System.out.println(set1.contains("スイカ"));
+		// 存在チェック (falseを返す)
+		System.out.println(set1.contains("なし"));
+		
 	}
 }
