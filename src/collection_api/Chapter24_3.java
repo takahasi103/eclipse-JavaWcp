@@ -40,6 +40,17 @@ public class Chapter24_3 {
 		set1.remove("なし"); // 何もしない、戻り値はfalse
 		System.out.println("set1 " + set1);
 		
+		// 拡張for文
+		Set<String> fruits = new HashSet<String>();
+		fruits.add("りんご");
+		fruits.add("ぶどう");
+		fruits.add("みかん");
+		fruits.add("もも");
+		
+		for (String fruit : fruits) {
+			System.out.println(fruit);
+		}
+		
 		
 	}
 }
