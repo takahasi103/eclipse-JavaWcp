@@ -50,5 +50,15 @@ public class Chapter24_1 {
         System.out.println(list1.remove(0)); //戻り値は"りんご"
         // System.out.println(list1.remove(5)); // コレクションの要素数より大きい位置を指定すると実行時エラー
         System.out.println(list1);
+        
+        // 拡張for文
+        List<String> prefectures = new ArrayList<>();
+        prefectures.add("北海道");
+        prefectures.add("青森県");
+        prefectures.add("秋田県");
+
+        for (String prefecture : prefectures) {
+          System.out.println(prefecture); // 北海道、青森県、秋田県の順に表示
+        }
     }
 }
