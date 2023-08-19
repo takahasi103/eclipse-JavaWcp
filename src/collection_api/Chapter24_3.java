@@ -33,6 +33,13 @@ public class Chapter24_3 {
 		System.out.println("set1 " + set1.size());
 		System.out.println("set2 " + set2.size());
 		
+		// 要素の削除
+		// 要素を削除するにはremoveメソッドを使います。
+		// 要素を削除する (要素が文字列の場合、文字列として同じであれば削除されます)
+		set1.remove("スイカ"); // 戻り値はtrue
+		set1.remove("なし"); // 何もしない、戻り値はfalse
+		System.out.println("set1 " + set1);
+		
 		
 	}
 }
