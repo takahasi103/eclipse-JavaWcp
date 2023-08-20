@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.ArrayList;
+
 public class Sample {
 	public static void main(String[] args) {
 //		1問目 - 1〜10の数字の偶数のみを大きい順に上から縦に並ぶように表示させる
@@ -60,5 +62,22 @@ public class Sample {
 				System.out.print(numbers[c] + ",");
 			}
 		}
+		System.out.println();
+		
+		 ArrayList<Integer> array = new ArrayList<Integer>();
+		 for (int y = 0; y < 20; y++) {
+			 array.add((y + 1) * 5);
+		 }
+		 
+		 System.out.println(array);
+		 
+		 for (int n = 0; n < 20; n++) {
+			 if ((n <= 10 && array.get(n) % 2 != 0) || (n > 10 && array.get(n) % 2 == 0)) {
+				 System.out.print(array.get(n));
+				 if (n < (array.size() - 1)) {
+					 System.out.print(",");
+				 }
+			 }
+		 }
 	}
 }
