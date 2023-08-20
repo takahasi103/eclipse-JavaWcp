@@ -20,7 +20,15 @@ public class Sample {
 		}
 		System.out.println("個数 " + count);
 		System.out.println("合計 " + total);
+		
 //		3問目 - 1〜10までの整数をカンマ区切りで横並びで表示（10にはカンマをつけない）させる問題
+		for (int number = 1; number <= 10; number++) {
+			System.out.print(number);
+			if (number < 10) {
+				System.out.print(",");
+			}
+		}
+		
 //		4問目 - 要素数20の配列を宣言し、要素に0から5ずつ加算して代入させる。[0]~[10]の値の奇数のみカンマ区切りで、[11]~[19]の値は偶数をカンマ区切りで表示させる問題
 	}
 }
