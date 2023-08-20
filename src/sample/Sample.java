@@ -29,6 +29,36 @@ public class Sample {
 			}
 		}
 		
+		System.out.println();
+		
 //		4問目 - 要素数20の配列を宣言し、要素に0から5ずつ加算して代入させる。[0]~[10]の値の奇数のみカンマ区切りで、[11]~[19]の値は偶数をカンマ区切りで表示させる問題
+		int[] numbers = new int[20];
+		for (int x = 0; x < 20; x++) {
+			numbers[x] = (x + 1) * 5;
+		}
+		
+		for (int a = 0; a < 20; a++) {
+			System.out.print(numbers[a] + " ");
+		}
+		
+		System.out.println();
+		
+//		for (int a = 0; a <= 10; a++) {
+//			if (numbers[a] % 2 != 0) {
+//				System.out.print(numbers[a] + ",");
+//			}
+//		}
+//		
+//		for (int b = 11; b < 20; b++) {
+//			if (numbers[b] % 2 == 0) {
+//				System.out.print(numbers[b] + ",");
+//			}
+//		}
+		
+		for (int c = 0; c < 20; c++) {
+			if ((c <= 10 && numbers[c] % 2 != 0) || (c > 10 && numbers[c] % 2 == 0)) {
+				System.out.print(numbers[c] + ",");
+			}
+		}
 	}
 }
