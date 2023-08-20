@@ -1,5 +1,8 @@
 package generics;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -20,6 +23,25 @@ public class Main {
 
 		appleBasket3.printTotalPrice(); // 「ふじの入った籠は合計300円です」と出力
 		peachBasket.printTotalPrice(); // 「黄金桃の入った籠は合計400円です」と出力
+		
+		// 境界ワイルドカード
+//		List<Fruit> fruits = new ArrayList<>();
+//		List<Apple2> apples = new ArrayList<>();
+		// 以下は説明用の実現不可能なコードです。いずれもコンパイルエラーとなります。
+//		fruits = apples // 要素は親子関係にあるが、この代入は成り立たずコンパイルエラー
+//		fruits.add(new Peach("黄金桃", 300)); // 上記を許してしまうと、実体がAppleのListなのに別の型の要素を追加できてしまう
+		
+		List<? extends Fruit> fruits; // 型パラメータとして、Fruitを継承したクラスを指定
+		List<Apple2> apples = new ArrayList<>();
+
+		fruits = apples;// コンパイルエラーにならない
+		
+		List<Integer> intList = new ArrayList<>();
+		List<? super Integer> wildCardIntList = new ArrayList<>();
+		List<Number> numList = new ArrayList<>();
+
+		wildCardIntList = numList; //OK
+//		intList = numList; //コンパイルエラー
 
 	}
 
