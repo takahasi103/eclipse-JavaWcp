@@ -11,6 +11,9 @@ public class Main {
 		
 		// replaceの引数にPeachクラスのインスタンスを渡そうとするとコンパイルエラーとなります。
 //		appleBasket.replace(new Peach("黄金桃"));
+		
+		Basket2<Apple2> appleBasket2 = new Basket2<>(new Apple2("ふじ"));
+		System.out.println(appleBasket2.get().getName());
 
 	}
 
