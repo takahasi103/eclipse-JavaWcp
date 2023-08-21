@@ -59,7 +59,10 @@ public class Sample {
 		
 		for (int c = 0; c < 20; c++) {
 			if ((c <= 10 && numbers[c] % 2 != 0) || (c > 10 && numbers[c] % 2 == 0)) {
-				System.out.print(numbers[c] + ",");
+				System.out.print(numbers[c]);
+				if (c < (numbers.length - 1)) {
+					System.out.print(",");
+				}
 			}
 		}
 		System.out.println();
