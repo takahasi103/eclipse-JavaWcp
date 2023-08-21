@@ -20,6 +20,17 @@ public class Main {
 		};
 		System.out.println(aa.hello());
 		
+		// インターフェースを実装する無名クラスの使い方
+		B b = new B() {
+			// helloメソッドを実装
+			@Override
+			public String hello() {
+				return "Hello B!";
+			}
+		};
+		System.out.println(b.hello());
+		
+		
 	}
 
 }
