@@ -2,6 +2,7 @@ package practice.chapter30;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Chapter30 {
@@ -21,6 +22,15 @@ public class Chapter30 {
             }
         }
         System.out.println("未完了のタスクの個数は" + unfinishedCount);
+        
+     // 未完了のタスクを昇順にソートして一覧表示
+        Collections.sort(list);
+        System.out.println("【未完了のタスクを昇順に並び替えて一覧表示】");
+        for (Task task : list) {
+            if (!task.isDone()) {
+                System.out.println(task);
+            }
+        }
 
 	}
 
