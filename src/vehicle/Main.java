@@ -15,6 +15,7 @@ public class Main {
 		
 		System.out.println(car1.getName());
 		car1.run(20);
+		car1.charge(10);
 		
 		System.out.println();
 		
