@@ -35,9 +35,13 @@ public class Main {
 		Car car2 = new Car(carModle, carColor);
 		car2.printData();
 		
-		System.out.println("何キロ走りますか？");
+		System.out.println("何km走りますか？");
 		int carDistance = scanner.nextInt();
 		car2.run(carDistance);
+		
+		System.out.println("何L給油しますか?");
+		int carFuel = scanner.nextInt();
+		car2.charge(carFuel);
 
 	}
 
