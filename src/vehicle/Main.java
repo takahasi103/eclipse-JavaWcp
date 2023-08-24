@@ -15,13 +15,11 @@ public class Main {
 		
 		System.out.println(car1.getName());
 		car1.run(20);
-		car1.printData();
 		
 		System.out.println();
 		
 		System.out.println(bicycle1.getName());
 		bicycle1.run(10);
-		bicycle1.printData();
 
 	}
 
