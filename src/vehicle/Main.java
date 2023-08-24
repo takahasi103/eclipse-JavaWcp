@@ -9,6 +9,8 @@ public class Main {
 		Bicycle bicycle1 = new Bicycle("自転車", "青");
 		bicycle1.printData();
 		
+		car1.run(20);
+		car1.printData();
 
 	}
 
