@@ -29,6 +29,11 @@ public class Main {
 		String carModle = scanner.next();
 		System.out.print("車の色:");
 		String carColor = scanner.next();
+		
+		System.out.println();
+		
+		Car car2 = new Car(carModle, carColor);
+		car2.printData();
 
 	}
 
