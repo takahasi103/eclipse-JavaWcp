@@ -1,5 +1,7 @@
 package vehicle;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -21,6 +23,12 @@ public class Main {
 		
 		System.out.println(bicycle1.getName());
 		bicycle1.run(10);
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("車種:");
+		String carModle = scanner.next();
+		System.out.print("車の色:");
+		String carColor = scanner.next();
 
 	}
 
