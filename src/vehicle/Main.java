@@ -15,16 +15,17 @@ public class Main {
 		
 		System.out.println();
 		
-		System.out.println(car1.getName());
+		System.out.println(car1.getModle());
 		car1.run(20);
 		car1.charge(10);
 		
 		System.out.println();
 		
-		System.out.println(bicycle1.getName());
+		System.out.println(bicycle1.getModle());
 		bicycle1.run(10);
 		
 		Scanner scanner = new Scanner(System.in);
+		
 		System.out.print("車種:");
 		String carModle = scanner.next();
 		System.out.print("車の色:");

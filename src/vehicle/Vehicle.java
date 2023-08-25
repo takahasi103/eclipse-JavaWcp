@@ -1,17 +1,17 @@
 package vehicle;
 
 public abstract class Vehicle {
-	private String name;
+	private String modle;
 	private String color;
 	protected int distance = 0;
 
-	Vehicle(String name, String color) {
-		this.name = name;
+	Vehicle(String modle, String color) {
+		this.modle = modle;
 		this.color = color;
 	}
 
-	public String getName() {
-		return this.name;
+	public String getModle() {
+		return this.modle;
 	}
 
 	public String getColor() {
@@ -22,8 +22,8 @@ public abstract class Vehicle {
 		return this.distance;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setModle(String modle) {
+		this.modle = modle;
 	}
 
 	public void setColor(String color) {
@@ -31,7 +31,7 @@ public abstract class Vehicle {
 	}
 
 	public void printData() {
-		System.out.println("名前：" + this.name);
+		System.out.println("車種：" + this.modle);
 		System.out.println("色：" + this.color);
 		System.out.println("走行距離：" + this.distance + "km");
 	}

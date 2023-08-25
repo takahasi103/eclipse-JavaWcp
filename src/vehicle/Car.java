@@ -3,8 +3,8 @@ package vehicle;
 public class Car extends Vehicle {
 	private int fuel = 100;
 	
-	Car(String name, String color) {
-		super(name, color);
+	Car(String modle, String color) {
+		super(modle, color);
 	}
 	
 	public void printData() {

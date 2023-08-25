@@ -1,8 +1,8 @@
 package vehicle;
 
 public class Bicycle extends Vehicle {
-	Bicycle(String name, String color) {
-		super(name, color);
+	Bicycle(String modle, String color) {
+		super(modle, color);
 	}
 	
 	public void run(int distance) {
