@@ -44,6 +44,25 @@ public class Main {
 		System.out.println("何L給油しますか?");
 		int carFuel = scanner.nextInt();
 		car2.charge(carFuel);
+		
+		System.out.println();
+		
+		System.out.println("色を変更しますか？[Yes or No]");
+		String Answer = scanner.next();
+		switch (Answer) {
+		case "Yes":
+			System.out.println("何色にしますか？");
+			String newColor = scanner.next();
+			car2.setColor(newColor);
+			car2.printData();
+			break;
+		case "No":
+			System.out.println("変更をしません");
+			break;
+		default:
+			System.out.println("YesかNoで選択してください");
+			break;
+		}
 
 	}
 
