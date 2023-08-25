@@ -5,24 +5,24 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		Car car1 = new Car("自動車", "赤");
-		car1.printData();
-		
-		System.out.println();
-		
-		Bicycle bicycle1 = new Bicycle("自転車", "青");
-		bicycle1.printData();
-		
-		System.out.println();
-		
-		System.out.println(car1.getModle());
-		car1.run(20);
-		car1.charge(10);
-		
-		System.out.println();
-		
-		System.out.println(bicycle1.getModle());
-		bicycle1.run(10);
+//		Car car1 = new Car("自動車", "赤");
+//		car1.printData();
+//		
+//		System.out.println();
+//		
+//		Bicycle bicycle1 = new Bicycle("自転車", "青");
+//		bicycle1.printData();
+//		
+//		System.out.println();
+//		
+//		System.out.println(car1.getModle());
+//		car1.run(20);
+//		car1.charge(10);
+//		
+//		System.out.println();
+//		
+//		System.out.println(bicycle1.getModle());
+//		bicycle1.run(10);
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -62,6 +62,19 @@ public class Main {
 		default:
 			System.out.println("YesかNoで選択してください");
 			break;
+		}
+		
+		System.out.println("車種を変更しますか？[Yes or No]");
+		Answer = scanner.next();
+		if (Answer.equals("Yes")) {
+			System.out.println("車種を入力してください");
+			String newModle = scanner.next();
+			car2.setModle(newModle);
+			car2.printData();
+		} else if (Answer.equals("No")) {
+			System.out.println("変更をしません");
+		} else {
+			System.out.println("YesかNoで選択してください");
 		}
 
 	}
