@@ -82,6 +82,8 @@ public class Main {
 		
 		bike1.run(50);
 		bike1.run(60);
+		
+		bike1.checkFuel();
 
 	}
 
