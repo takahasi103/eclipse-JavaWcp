@@ -79,6 +79,9 @@ public class Main {
 		
 		Bike bike1 = new Bike("テスト", "黒");
 		bike1.printData();
+		
+		bike1.run(50);
+		bike1.run(60);
 
 	}
 
