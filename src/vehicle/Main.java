@@ -40,6 +40,7 @@ public class Main {
 		int carDistance = scanner.nextInt();
 		car2.run(carDistance);
 		
+		car2.checkFuel();
 		System.out.println("何L給油しますか?");
 		int carFuel = scanner.nextInt();
 		car2.charge(carFuel);

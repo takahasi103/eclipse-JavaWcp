@@ -28,6 +28,12 @@ public class Car extends Vehicle {
 		return this.fuel;
 	}
 	
+	public void checkFuel() {
+		System.out.println("現在のガソリン量:" + this.fuel + "L");
+		int requiredFuel = 100 - this.fuel;
+		System.out.println("満タンに給油するには" + requiredFuel + "L必要です");
+	}
+	
 	public void charge(int litre) {
 		System.out.println(litre + "L給油します");
 		if (litre <= 0) {
