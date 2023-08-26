@@ -1,7 +1,5 @@
 package vehicle;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class Main {
 //		System.out.println(bicycle1.getModle());
 //		bicycle1.run(10);
 		
-		Scanner scanner = new Scanner(System.in);
+//		Scanner scanner = new Scanner(System.in);
 		
 //		System.out.print("車種:");
 //		String carModle = scanner.next();
