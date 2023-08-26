@@ -31,5 +31,9 @@ public class Person {
 		System.out.println("年齢は" + this.age + "歳です");
 	}
 	
+	public void buy(Vehicle vehicle) {
+		vehicle.setOwner(this);
+	}
+	
 
 }

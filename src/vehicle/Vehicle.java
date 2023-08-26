@@ -6,6 +6,7 @@ public abstract class Vehicle {
 	private String modle;
 	private String color;
 	protected int distance = 0;
+	private Person owner;
 
 	Vehicle(String modle, String color) {
 		this.modle = modle;
@@ -80,5 +81,9 @@ public abstract class Vehicle {
 			this.changeModle();
 			break;
 		}
+	}
+	
+	public void setOwner(Person person) {
+		this.owner = person;
 	}
 }
