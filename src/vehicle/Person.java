@@ -12,5 +12,10 @@ public class Person {
 		this.age = age;
 	}
 	
+	Person(String firstName, String middleName, String lastName, int age) {
+		this(firstName, lastName, age);
+		this.middleName = middleName;
+	}
+	
 
 }
