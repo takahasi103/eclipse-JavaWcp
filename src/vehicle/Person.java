@@ -5,6 +5,7 @@ public class Person {
 	private String middleName;
 	private String lastName;
 	private int age;
+	private int endurance = 100;
 	
 	Person(String firstName, String lastName, int age) {
 		this.firstName = firstName;
