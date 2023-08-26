@@ -61,4 +61,24 @@ public abstract class Vehicle {
 			break;
 		}
 	}
+	
+	public void changeModle() {
+		System.out.println("車種を変更しますか？[Yes or No]");
+		String Answer = scanner.next();
+		switch (Answer) {
+		case "Yes":
+			System.out.println("車種を入力してください");
+			String newModle = scanner.next();
+			this.setModle(newModle);
+			this.printData();
+			break;
+		case "No":
+			System.out.println("変更をしません");
+			break;
+		default:
+			System.out.println("YesかNoで選択してください");
+			this.changeModle();
+			break;
+		}
+	}
 }

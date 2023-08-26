@@ -89,6 +89,7 @@ public class Main {
 		bike1.charge(200);
 		
 		bike1.changeColor();
+		bike1.changeModle();
 
 	}
 
