@@ -44,15 +44,15 @@ public abstract class Vehicle {
 	
 	public void changeColor() {
 		System.out.println("色を変更しますか？[Yes or No]");
-		String Answer = scanner.next();
+		String Answer = scanner.next().toLowerCase(); // toLowerCase() 入力を小文字に変換
 		switch (Answer) {
-		case "Yes":
+		case "yes":
 			System.out.println("何色にしますか？");
 			String newColor = scanner.next();
 			this.setColor(newColor);
 			this.printData();
 			break;
-		case "No":
+		case "no":
 			System.out.println("変更をしません");
 			break;
 		default:
@@ -64,15 +64,15 @@ public abstract class Vehicle {
 	
 	public void changeModle() {
 		System.out.println("車種を変更しますか？[Yes or No]");
-		String Answer = scanner.next();
+		String Answer = scanner.next().toLowerCase(); // toLowerCase() 入力を小文字に変換
 		switch (Answer) {
-		case "Yes":
+		case "yes":
 			System.out.println("車種を入力してください");
 			String newModle = scanner.next();
 			this.setModle(newModle);
 			this.printData();
 			break;
-		case "No":
+		case "no":
 			System.out.println("変更をしません");
 			break;
 		default:
