@@ -25,5 +25,10 @@ public class Person {
 		}
 	}
 	
+	public void printData() {
+		System.out.println("名前は" + this.fullName() + "です");
+		System.out.println("年齢は" + this.age + "歳です");
+	}
+	
 
 }
