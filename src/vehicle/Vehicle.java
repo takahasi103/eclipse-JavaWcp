@@ -1,5 +1,7 @@
 package vehicle;
 
+import java.util.Scanner;
+
 public abstract class Vehicle {
 	private String modle;
 	private String color;
@@ -37,4 +39,26 @@ public abstract class Vehicle {
 	}
 
 	public abstract void run(int distance);
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	public void changeColor() {
+		System.out.println("色を変更しますか？[Yes or No]");
+		String Answer = scanner.next();
+		switch (Answer) {
+		case "Yes":
+			System.out.println("何色にしますか？");
+			String newColor = scanner.next();
+			this.setColor(newColor);
+			this.printData();
+			break;
+		case "No":
+			System.out.println("変更をしません");
+			break;
+		default:
+			System.out.println("YesかNoで選択してください");
+			this.changeColor();
+			break;
+		}
+	}
 }

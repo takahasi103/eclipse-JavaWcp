@@ -87,6 +87,8 @@ public class Main {
 		
 		bike1.charge(30);
 		bike1.charge(200);
+		
+		bike1.changeColor();
 
 	}
 
