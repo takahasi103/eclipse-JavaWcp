@@ -17,5 +17,13 @@ public class Person {
 		this.middleName = middleName;
 	}
 	
+	public String fullName() {
+		if (middleName == null) {
+			return this.firstName + " " + this.lastName;
+		} else {
+			return this.firstName + " " + this.middleName + " " + this.lastName;
+		}
+	}
+	
 
 }
