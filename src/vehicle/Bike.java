@@ -1,7 +1,7 @@
 package vehicle;
 
 public class Bike extends Car {
-	Bike(String name, String color) {
-		super(name, color);
+	Bike(String modle, String color) {
+		super(modle, color);
 	}
 }
