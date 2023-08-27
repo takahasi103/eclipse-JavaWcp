@@ -35,5 +35,9 @@ public class Person {
 		vehicle.setOwner(this);
 	}
 	
+	public int getEndurance() {
+		return this.endurance;
+	}
+	
 
 }
