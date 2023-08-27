@@ -79,15 +79,18 @@ public class Main {
 		bike1.printData();
 		
 		bike1.run(50);
-		bike1.run(60);
+//		bike1.run(60);
+//		
+//		bike1.checkFuel();
+//		
+//		bike1.charge(30);
+//		bike1.charge(200);
 		
-		bike1.checkFuel();
+//		bike1.changeColor();
+//		bike1.changeModle();
 		
-		bike1.charge(30);
-		bike1.charge(200);
-		
-		bike1.changeColor();
-		bike1.changeModle();
+		Person person1 = new Person("山田", "太郎", 25);
+		person1.printData();
 
 	}
 
