@@ -91,6 +91,9 @@ public class Main {
 		
 		Person person1 = new Person("山田", "太郎", 25);
 		person1.printData();
+		
+		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
+		person2.printData();
 
 	}
 
