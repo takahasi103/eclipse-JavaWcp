@@ -39,5 +39,9 @@ public class Person {
 		return this.endurance;
 	}
 	
+	public void setEndurance(int endurance) {
+		this.endurance = endurance;
+	}
+	
 
 }
