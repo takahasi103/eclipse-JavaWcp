@@ -8,8 +8,8 @@ public class Main {
 //		
 //		System.out.println();
 //		
-//		Bicycle bicycle1 = new Bicycle("自転車", "青");
-//		bicycle1.printData();
+		Bicycle bicycle1 = new Bicycle("自転車", "青");
+		bicycle1.printData();
 //		
 //		System.out.println();
 //		
@@ -75,10 +75,10 @@ public class Main {
 //			System.out.println("YesかNoで選択してください");
 //		}
 		
-		Bike bike1 = new Bike("テスト", "黒");
-		bike1.printData();
-		
-		bike1.run(50);
+//		Bike bike1 = new Bike("テスト", "黒");
+//		bike1.printData();
+//		
+//		bike1.run(50);
 //		bike1.run(60);
 //		
 //		bike1.checkFuel();
@@ -91,13 +91,20 @@ public class Main {
 		
 		Person person1 = new Person("山田", "太郎", 25);
 		person1.printData();
+//		
+//		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
+//		person2.printData();
+//		
+//		person1.buy(bike1);
+//		System.out.println("==" + bike1.getModle() + "のオーナー情報==");
+//		bike1.getOwner().printData();
 		
-		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
-		person2.printData();
+		person1.buy(bicycle1);
+		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
+		bicycle1.run(50);
+		bicycle1.run(60);
 		
-		person1.buy(bike1);
-		System.out.println("==" + bike1.getModle() + "のオーナー情報==");
-		bike1.getOwner().printData();
+		
 
 	}
 
