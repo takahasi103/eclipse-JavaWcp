@@ -96,6 +96,8 @@ public class Main {
 		person2.printData();
 		
 		person1.buy(bike1);
+		System.out.println("==" + bike1.getModle() + "のオーナー情報==");
+		bike1.getOwner().printData();
 
 	}
 
