@@ -86,4 +86,8 @@ public abstract class Vehicle {
 	public void setOwner(Person person) {
 		this.owner = person;
 	}
+	
+	public Person getOwner() {
+		return this.owner;
+	}
 }

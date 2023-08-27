@@ -94,6 +94,8 @@ public class Main {
 		
 		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
 		person2.printData();
+		
+		person1.buy(bike1);
 
 	}
 
