@@ -90,8 +90,9 @@ public class Main {
 //		bike1.changeModle();
 		
 		Person person1 = new Person("山田", "太郎", 25);
+		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
 		person1.printData();
-//		
+		System.out.println("=====================");
 //		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
 //		person2.printData();
 //		
@@ -100,9 +101,10 @@ public class Main {
 //		bike1.getOwner().printData();
 		
 		person1.buy(bicycle1);
-		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
 		bicycle1.run(50);
 		bicycle1.run(60);
+		bicycle1.getOwner().charge(60);
+		bicycle1.run(70);
 		
 		
 

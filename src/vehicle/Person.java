@@ -44,11 +44,12 @@ public class Person {
 	}
 	
 	public void charge(int litre) {
-		System.out.println(litre + "L水分を補給します");
+		System.out.println(litre + "ml水分を補給します");
 		if (litre <= 0) {
 			System.out.println("補給できません");
 		} else if (litre + this.endurance >= 100) {
 			System.out.println("体力が満タンになりました");
+			this.endurance = 100;
 		} else {
 			this.endurance += litre;
 		}
