@@ -103,7 +103,7 @@ public class Main {
 		person1.buy(bicycle1);
 		bicycle1.run(50);
 		bicycle1.run(60);
-		bicycle1.getOwner().charge(60);
+		bicycle1.getOwner().charge(600);
 		bicycle1.run(70);
 		
 		

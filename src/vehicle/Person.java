@@ -5,7 +5,7 @@ public class Person {
 	private String middleName;
 	private String lastName;
 	private int age;
-	private int endurance = 100;
+	private int endurance = 1000;
 	
 	Person(String firstName, String lastName, int age) {
 		this.firstName = firstName;
@@ -47,9 +47,9 @@ public class Person {
 		System.out.println(litre + "ml水分を補給します");
 		if (litre <= 0) {
 			System.out.println("補給できません");
-		} else if (litre + this.endurance >= 100) {
+		} else if (litre + this.endurance >= 1000) {
 			System.out.println("体力が満タンになりました");
-			this.endurance = 100;
+			this.endurance = 1000;
 		} else {
 			this.endurance += litre;
 		}
