@@ -101,8 +101,10 @@ public class Main {
 //		bike1.getOwner().printData();
 		
 		person1.buy(bicycle1);
+		System.out.println(bicycle1.getOwner().getEndurance());
 		bicycle1.run(50);
 		bicycle1.run(60);
+		System.out.println(bicycle1.getOwner().getEndurance());
 		bicycle1.getOwner().charge(600);
 		bicycle1.run(70);
 		
