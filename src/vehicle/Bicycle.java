@@ -5,11 +5,13 @@ public class Bicycle extends Vehicle {
 		super(modle, color);
 	}
 	
+	final int ADJUSTED_VALUE = 10;
+	
 	public void run(int distance) {
 		System.out.println(distance + "km走ります");
-		if (distance * 10 <= this.getOwner().getEndurance()) {
+		if ((distance * ADJUSTED_VALUE) <= this.getOwner().getEndurance()) {
 			this.distance += distance;
-			this.getOwner().setEndurance(this.getOwner().getEndurance() - distance * 10);
+			this.getOwner().setEndurance(this.getOwner().getEndurance() - (distance * ADJUSTED_VALUE));
 		} else {
 			System.out.println("体力が足りません");
 		}
