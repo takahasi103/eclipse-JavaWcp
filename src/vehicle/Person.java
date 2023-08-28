@@ -43,5 +43,17 @@ public class Person {
 		this.endurance = endurance;
 	}
 	
+	public void charge(int litre) {
+		System.out.println(litre + "L水分を補給します");
+		if (litre <= 0) {
+			System.out.println("補給できません");
+		} else if (litre + this.endurance >= 100) {
+			System.out.println("体力が満タンになりました");
+		} else {
+			this.endurance += litre;
+		}
+		System.out.println("持久力:" + this.endurance);
+	}
+	
 
 }
