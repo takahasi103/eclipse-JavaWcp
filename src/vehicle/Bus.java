@@ -11,4 +11,8 @@ public class Bus extends Car {
 		return this.passenger;
 	}
 	
+	public void setPassenger(int passenger) {
+		this.passenger = passenger;
+	}
+	
 }
