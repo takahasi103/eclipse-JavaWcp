@@ -2,10 +2,11 @@ package vehicle;
 
 public class Bus extends Car {
 	private int passenger = 0;
-	private int capacilty = 30;
+	private int capacilty;
 	
-	Bus(String name, String color) {
+	Bus(String name, String color, int capacilty) {
 		super(name, color);
+		this.capacilty = capacilty;
 	}
 	
 	public int getPassenger() {
