@@ -8,8 +8,8 @@ public class Main {
 //		
 //		System.out.println();
 //		
-		Bicycle bicycle1 = new Bicycle("自転車", "青");
-		bicycle1.printData();
+//		Bicycle bicycle1 = new Bicycle("自転車", "青");
+//		bicycle1.printData();
 //		
 //		System.out.println();
 //		
@@ -90,9 +90,9 @@ public class Main {
 //		bike1.changeModle();
 		
 		Person person1 = new Person("山田", "太郎", 25);
-		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
-		person1.printData();
-		System.out.println("=====================");
+//		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
+//		person1.printData();
+//		System.out.println("=====================");
 //		Person person2 = new Person("ジョン", "F", "ケネディ", 40);
 //		person2.printData();
 //		
@@ -100,13 +100,16 @@ public class Main {
 //		System.out.println("==" + bike1.getModle() + "のオーナー情報==");
 //		bike1.getOwner().printData();
 		
-		person1.buy(bicycle1);
-		System.out.println(bicycle1.getOwner().getEndurance());
-		bicycle1.run(50);
-		bicycle1.run(60);
-		System.out.println(bicycle1.getOwner().getEndurance());
-		bicycle1.getOwner().charge(600);
-		bicycle1.run(70);
+//		person1.buy(bicycle1);
+//		System.out.println(bicycle1.getOwner().getEndurance());
+//		bicycle1.run(50);
+//		bicycle1.run(60);
+//		System.out.println(bicycle1.getOwner().getEndurance());
+//		bicycle1.getOwner().charge(600);
+//		bicycle1.run(70);
+		
+		Bus bus1 = new Bus("大型バス", "緑", 30);
+		bus1.printData();
 		
 		
 
