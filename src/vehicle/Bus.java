@@ -32,6 +32,10 @@ public class Bus extends Car {
 		this.capacilty = capacilty;
 	}
 	
+	public int getRemainingSeats() {
+		return this.remainingSeats;
+	}
+	
 	public void ride(int passenger) {
 		if (this.capacilty >= passenger) {
 			this.setPassenger(passenger);
