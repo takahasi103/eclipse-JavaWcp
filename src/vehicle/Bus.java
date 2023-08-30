@@ -9,6 +9,12 @@ public class Bus extends Car {
 		this.capacilty = capacilty;
 	}
 	
+	public void printData() {
+		super.printData();
+		System.out.println("定員人数:" + this.capacilty + "人");
+		System.out.println("乗客数:" + this.passenger + "人");
+	}
+	
 	public int getPassenger() {
 		return this.passenger;
 	}
