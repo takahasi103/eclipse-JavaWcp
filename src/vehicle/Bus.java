@@ -3,7 +3,7 @@ package vehicle;
 public class Bus extends Car {
 	private int passenger = 0;
 	private int capacilty;
-	private int remainingSeats;
+	private int remainingSeats = this.capacilty;
 	
 	Bus(String name, String color, int capacilty) {
 		super(name, color);
@@ -34,6 +34,9 @@ public class Bus extends Car {
 	
 	public int getRemainingSeats() {
 		return this.remainingSeats;
+	}
+	public void setRemainingSeats() {
+		this.remainingSeats -= this.passenger;
 	}
 	
 	public void ride(int passenger) {
