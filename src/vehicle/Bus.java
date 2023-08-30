@@ -3,6 +3,7 @@ package vehicle;
 public class Bus extends Car {
 	private int passenger = 0;
 	private int capacilty;
+	private int remainingSeats;
 	
 	Bus(String name, String color, int capacilty) {
 		super(name, color);

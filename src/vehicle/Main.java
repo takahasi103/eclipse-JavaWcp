@@ -110,6 +110,12 @@ public class Main {
 		
 		Bus bus1 = new Bus("大型バス", "緑", 30);
 		bus1.printData();
+		System.out.println("=====================");
+		bus1.ride(20);
+		bus1.printData();
+		System.out.println("=====================");
+		bus1.ride(20);
+		bus1.printData();
 		
 		
 
