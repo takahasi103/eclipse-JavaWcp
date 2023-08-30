@@ -3,11 +3,12 @@ package vehicle;
 public class Bus extends Car {
 	private int passenger = 0;
 	private int capacilty;
-	private int remainingSeats = this.capacilty;
+	private int remainingSeats;
 	
 	Bus(String name, String color, int capacilty) {
 		super(name, color);
 		this.capacilty = capacilty;
+		this.remainingSeats = capacilty;
 	}
 	
 	public void printData() {
@@ -40,8 +41,9 @@ public class Bus extends Car {
 	}
 	
 	public void ride(int passenger) {
-		if (this.capacilty >= passenger) {
+		if (this.remainingSeats >= passenger) {
 			this.setPassenger(passenger);
+			this.setRemainingSeats();
 		} else {
 			System.out.println("これ以上乗る事はできません");
 		}
