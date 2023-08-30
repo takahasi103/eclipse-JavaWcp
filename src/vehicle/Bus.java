@@ -44,6 +44,7 @@ public class Bus extends Car {
 		if (this.remainingSeats >= passenger) {
 			this.setPassenger(passenger);
 			this.setRemainingSeats();
+			System.out.println("残り" + this.remainingSeats + "人乗車可能です");
 		} else {
 			System.out.println("これ以上乗る事はできません");
 		}
