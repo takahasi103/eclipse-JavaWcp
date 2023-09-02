@@ -57,5 +57,9 @@ public class Person {
 		System.out.println("持久力:" + this.endurance);
 	}
 	
+	public int getWallet() {
+		return this.wallet;
+	}
+	
 
 }
