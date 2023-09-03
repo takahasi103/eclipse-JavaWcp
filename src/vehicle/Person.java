@@ -30,6 +30,7 @@ public class Person {
 	public void printData() {
 		System.out.println("名前は" + this.fullName() + "です");
 		System.out.println("年齢は" + this.age + "歳です");
+		System.out.println("所持金は" + this.wallet + "円です");
 	}
 	
 	public void buy(Vehicle vehicle) {
