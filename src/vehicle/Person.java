@@ -61,5 +61,9 @@ public class Person {
 		return this.wallet;
 	}
 	
+	public void setWallet(int wallet) {
+		this.wallet = wallet;
+	}
+	
 
 }
