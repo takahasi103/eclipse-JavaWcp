@@ -108,19 +108,23 @@ public class Main {
 //		bicycle1.getOwner().charge(600);
 //		bicycle1.run(70);
 		
-		Bus bus1 = new Bus("大型バス", "緑", 30);
-		bus1.printData();
-		System.out.println("=====================");
-		System.out.println(bus1.getRemainingSeats());
-		bus1.ride(20);
-		bus1.printData();
-		System.out.println("=====================");
-		bus1.ride(20);
-		bus1.printData();
+//		Bus bus1 = new Bus("大型バス", "緑", 30);
+//		bus1.printData();
+//		System.out.println("=====================");
+//		System.out.println(bus1.getRemainingSeats());
+//		bus1.ride(20);
+//		bus1.printData();
+//		System.out.println("=====================");
+//		bus1.ride(20);
+//		bus1.printData();
 		
-		person1.printData();
-		person1.setWallet(2000);
-		person1.printData();
+//		person1.printData();
+//		person1.setWallet(2000);
+//		person1.printData();
+		
+		Ship ship1 = new Ship("豪華客船", "白", 300);
+		ship1.printData();
+		
 		
 		
 
