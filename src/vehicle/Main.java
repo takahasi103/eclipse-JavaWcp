@@ -118,6 +118,10 @@ public class Main {
 		bus1.ride(20);
 		bus1.printData();
 		
+		person1.printData();
+		person1.setWallet(2000);
+		person1.printData();
+		
 		
 
 	}
