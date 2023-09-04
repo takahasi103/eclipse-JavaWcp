@@ -150,6 +150,7 @@ public class Main {
 		int n = scanner.nextInt();
 		
 		for (int i = 1; i <= n; i++) {
+			System.out.println("====================");
 			System.out.println(i + "人目");
 			System.out.print("[姓] ");
 			String firstName = scanner.next();
@@ -159,7 +160,7 @@ public class Main {
 			int age = scanner.nextInt();
 			
 			Person person = new Person(firstName, lastName, age);
-			
+			person.printData();
 		}
 		
 		
