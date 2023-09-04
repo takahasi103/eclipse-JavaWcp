@@ -169,6 +169,7 @@ public class Main {
 		}
 		
 		System.out.println(people);
+		people.get(0).printData();
 		
 		
 		
