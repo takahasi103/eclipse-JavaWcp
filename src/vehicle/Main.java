@@ -147,7 +147,7 @@ public class Main {
 //		Person person2 = new Person(firstName, lastName, age);
 //		person2.printData();
 		
-		ArrayList<String> people = new ArrayList<String>();
+		ArrayList<Person> people = new ArrayList<Person>();
 		System.out.println(people);
 		
 		System.out.print("何人ですか？");
@@ -164,8 +164,11 @@ public class Main {
 			int age = scanner.nextInt();
 			
 			Person person = new Person(firstName, lastName, age);
+			people.add(person);
 			person.printData();
 		}
+		
+		System.out.println(people);
 		
 		
 		
