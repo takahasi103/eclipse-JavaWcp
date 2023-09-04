@@ -170,6 +170,8 @@ public class Main {
 		
 		System.out.println(people);
 		people.get(0).printData();
+		people.get(1).setWallet(1000);
+		people.get(1).printData();
 		
 		
 		
