@@ -1,5 +1,7 @@
 package vehicle;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class Main {
 //		System.out.println(bicycle1.getModle());
 //		bicycle1.run(10);
 		
-//		Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		
 //		System.out.print("車種:");
 //		String carModle = scanner.next();
@@ -89,7 +91,7 @@ public class Main {
 //		bike1.changeColor();
 //		bike1.changeModle();
 		
-		Person person1 = new Person("山田", "太郎", 25);
+//		Person person1 = new Person("山田", "太郎", 25);
 //		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
 //		person1.printData();
 //		System.out.println("=====================");
@@ -108,29 +110,41 @@ public class Main {
 //		bicycle1.getOwner().charge(600);
 //		bicycle1.run(70);
 		
-		Bus bus1 = new Bus("大型バス", "緑", 30);
-		bus1.printData();
-		System.out.println("=====================");
-		System.out.println(bus1.getRemainingSeats());
-		bus1.ride(20);
-		bus1.printData();
-		System.out.println("=====================");
-		bus1.ride(20);
-		bus1.printData();
+//		Bus bus1 = new Bus("大型バス", "緑", 30);
+//		bus1.printData();
+//		System.out.println("=====================");
+//		System.out.println(bus1.getRemainingSeats());
+//		bus1.ride(20);
+//		bus1.printData();
+//		System.out.println("=====================");
+//		bus1.ride(20);
+//		bus1.printData();
 		
 //		person1.printData();
 //		person1.setWallet(2000);
 //		person1.printData();
 		
-		Ship ship1 = new Ship("豪華客船", "白", 300);
-		ship1.printData();
-		System.out.println("=====================");
-		System.out.println(ship1.getRemainingSeats());
-		ship1.ride(20);
-		ship1.printData();
-		System.out.println("=====================");
-		ship1.ride(20);
-		ship1.printData();
+//		Ship ship1 = new Ship("豪華客船", "白", 300);
+//		ship1.printData();
+//		System.out.println("=====================");
+//		System.out.println(ship1.getRemainingSeats());
+//		ship1.ride(20);
+//		ship1.printData();
+//		System.out.println("=====================");
+//		ship1.ride(20);
+//		ship1.printData();
+		
+		
+		System.out.println("名前を入力してください");
+		System.out.print("[姓] ");
+		String firstName = scanner.next();
+		System.out.print("[名] ");
+		String lastName = scanner.next();
+		System.out.print("[年齢] ");
+		int age = scanner.nextInt();
+		
+		Person person2 = new Person(firstName, lastName, age);
+		person2.printData();
 		
 		
 		
