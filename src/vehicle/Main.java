@@ -1,5 +1,6 @@
 package vehicle;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -146,9 +147,12 @@ public class Main {
 //		Person person2 = new Person(firstName, lastName, age);
 //		person2.printData();
 		
+		ArrayList<String> people = new ArrayList<String>();
+		System.out.println(people);
+		
 		System.out.print("何人ですか？");
 		int n = scanner.nextInt();
-		
+	
 		for (int i = 1; i <= n; i++) {
 			System.out.println("====================");
 			System.out.println(i + "人目");
