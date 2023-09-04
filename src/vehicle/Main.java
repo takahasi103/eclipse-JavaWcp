@@ -135,16 +135,32 @@ public class Main {
 //		ship1.printData();
 		
 		
-		System.out.println("名前を入力してください");
-		System.out.print("[姓] ");
-		String firstName = scanner.next();
-		System.out.print("[名] ");
-		String lastName = scanner.next();
-		System.out.print("[年齢] ");
-		int age = scanner.nextInt();
+//		System.out.println("名前を入力してください");
+//		System.out.print("[姓] ");
+//		String firstName = scanner.next();
+//		System.out.print("[名] ");
+//		String lastName = scanner.next();
+//		System.out.print("[年齢] ");
+//		int age = scanner.nextInt();
+//		
+//		Person person2 = new Person(firstName, lastName, age);
+//		person2.printData();
 		
-		Person person2 = new Person(firstName, lastName, age);
-		person2.printData();
+		System.out.print("何人ですか？");
+		int n = scanner.nextInt();
+		
+		for (int i = 1; i <= n; i++) {
+			System.out.println(i + "人目");
+			System.out.print("[姓] ");
+			String firstName = scanner.next();
+			System.out.print("[名] ");
+			String lastName = scanner.next();
+			System.out.print("[年齢] ");
+			int age = scanner.nextInt();
+			
+			Person person = new Person(firstName, lastName, age);
+			
+		}
 		
 		
 		
