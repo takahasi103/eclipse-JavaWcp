@@ -192,12 +192,16 @@ public class Main {
 		System.out.println(sample);
 		sample.add(personC);
 		System.out.println(sample);
+//		
+//		System.out.println("====================");
+//		sample.get(1).printData();
+//		sample.remove(1);
+//		System.out.println("====================");
+//		sample.get(1).printData();
 		
-		System.out.println("====================");
-		sample.get(1).printData();
-		sample.remove(1);
-		System.out.println("====================");
-		sample.get(1).printData();
+		for (Person person : sample) {
+			person.printData();
+		}
 		
 		
 		
