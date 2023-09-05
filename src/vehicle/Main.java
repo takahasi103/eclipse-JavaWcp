@@ -92,7 +92,7 @@ public class Main {
 //		bike1.changeColor();
 //		bike1.changeModle();
 		
-//		Person person1 = new Person("山田", "太郎", 25);
+		Person person1 = new Person("山田", "太郎", 25);
 //		System.out.println("==" + bicycle1.getModle() + "のオーナー情報==");
 //		person1.printData();
 //		System.out.println("=====================");
@@ -172,6 +172,10 @@ public class Main {
 		people.get(0).printData();
 		people.get(1).setWallet(1000);
 		people.get(1).printData();
+		
+		people.set(1, person1);
+		people.get(1).printData();
+		
 		
 		
 		
