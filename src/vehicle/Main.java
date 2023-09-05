@@ -165,13 +165,17 @@ public class Main {
 			
 			Person person = new Person(firstName, lastName, age);
 			people.add(person);
-			person.printData();
+//			person.printData();
 		}
 		
-		System.out.println(people);
+		System.out.println();
+//		System.out.println(people);
 		people.get(0).printData();
+		System.out.println("====================");
 		people.get(1).setWallet(1000);
 		people.get(1).printData();
+		
+		System.out.println("====================");
 		
 		people.set(1, person1);
 		people.get(1).printData();
