@@ -147,38 +147,51 @@ public class Main {
 //		Person person2 = new Person(firstName, lastName, age);
 //		person2.printData();
 		
-		ArrayList<Person> people = new ArrayList<Person>();
-		System.out.println(people);
-		
-		System.out.print("何人ですか？");
-		int n = scanner.nextInt();
-	
-		for (int i = 1; i <= n; i++) {
-			System.out.println("====================");
-			System.out.println(i + "人目");
-			System.out.print("[姓] ");
-			String firstName = scanner.next();
-			System.out.print("[名] ");
-			String lastName = scanner.next();
-			System.out.print("[年齢] ");
-			int age = scanner.nextInt();
-			
-			Person person = new Person(firstName, lastName, age);
-			people.add(person);
-//			person.printData();
-		}
-		
-		System.out.println();
+//		ArrayList<Person> people = new ArrayList<Person>();
 //		System.out.println(people);
-		people.get(0).printData();
-		System.out.println("====================");
-		people.get(1).setWallet(1000);
-		people.get(1).printData();
+//		
+//		System.out.print("何人ですか？");
+//		int n = scanner.nextInt();
+//	
+//		for (int i = 1; i <= n; i++) {
+//			System.out.println("====================");
+//			System.out.println(i + "人目");
+//			System.out.print("[姓] ");
+//			String firstName = scanner.next();
+//			System.out.print("[名] ");
+//			String lastName = scanner.next();
+//			System.out.print("[年齢] ");
+//			int age = scanner.nextInt();
+//			
+//			Person person = new Person(firstName, lastName, age);
+//			people.add(person);
+////			person.printData();
+//		}
+//		
+//		System.out.println();
+//		System.out.println(people);
+//		people.get(0).printData();
+//		System.out.println("====================");
+//		people.get(1).setWallet(1000);
+//		people.get(1).printData();
+//		
+//		System.out.println("====================");
+//		
+//		people.set(1, person1);
+//		people.get(1).printData();
 		
-		System.out.println("====================");
+		ArrayList<Person> sample = new ArrayList<Person>();
+		Person personA = new Person("田中", "太郎", 25);
+		Person personB = new Person("山田", "花子", 25);
+		Person personC = new Person("ハリー", "F", "マイケル", 25);
 		
-		people.set(1, person1);
-		people.get(1).printData();
+		System.out.println(sample);
+		sample.add(personA);
+		System.out.println(sample);
+		sample.add(personB);
+		System.out.println(sample);
+		sample.add(personC);
+		System.out.println(sample);
 		
 		
 		
