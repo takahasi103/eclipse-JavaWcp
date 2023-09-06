@@ -32,6 +32,27 @@ class CalculatorTest {
 //	   ここでは実測値（result）が期待結果（4）と一致するかどうかを検証
 	  assertEquals(result, 4);
 	 }
+	 
+	 @Test
+	 @DisplayName("4の平方根は2になる")
+	 void testRoot4() {
+//	   1. テスト対象クラスのセットアップ
+	  Calculator calc = new Calculator();
+//	   2. テスト対象メソッド（今回はrootメソッド）を実行し、結果を取得する
+	  double result = calc.root(4.0);
+//	   3. 実行結果の実測値と期待値の検証（アサーション）
+	  assertEquals(result, 2.0);
+	 }
+	 
+	 @Test
+	 @DisplayName("-1の平方根は例外が発生する")
+	 void testRootException() {
+//	   1. テスト対象クラスのセットアップ
+	  Calculator calc = new Calculator();
+//	   2. テスト対象メソッドの実行と、3. 実行結果の検証を1行で行う
+//	   org.junit.jupiter.api.Assertions.assertThrowsメソッドを使用する
+	  assertThrows(IllegalArgumentException.class, () -> calc.root(-1));
+	 }
 	
 
 }
