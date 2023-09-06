@@ -203,6 +203,8 @@ public class Main {
 			person.printData();
 		}
 		
+		System.out.println(sample.size());
+		
 		
 		
 		
