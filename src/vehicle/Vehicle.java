@@ -34,6 +34,11 @@ public abstract class Vehicle {
 	}
 
 	public void printData() {
+		if (this.owner != null) {
+			System.out.println("== オーナーの情報 ==");
+			this.owner.printData();
+			System.out.println("==================");
+		}
 		System.out.println("車種：" + this.modle);
 		System.out.println("色：" + this.color);
 		System.out.println("走行距離：" + this.distance + "km");

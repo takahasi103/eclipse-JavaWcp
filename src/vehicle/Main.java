@@ -78,7 +78,7 @@ public class Main {
 //			System.out.println("YesかNoで選択してください");
 //		}
 		
-//		Bike bike1 = new Bike("テスト", "黒");
+		Bike bike1 = new Bike("テスト", "黒");
 //		bike1.printData();
 //		
 //		bike1.run(50);
@@ -111,7 +111,7 @@ public class Main {
 //		bicycle1.getOwner().charge(600);
 //		bicycle1.run(70);
 		
-//		Bus bus1 = new Bus("大型バス", "緑", 30);
+		Bus bus1 = new Bus("大型バス", "緑", 30);
 //		bus1.printData();
 //		System.out.println("=====================");
 //		System.out.println(bus1.getRemainingSeats());
@@ -192,6 +192,8 @@ public class Main {
 //		System.out.println(sample);
 		sample.add(personC);
 //		System.out.println(sample);
+		
+		
 //		
 //		System.out.println("====================");
 //		sample.get(1).printData();
@@ -204,11 +206,15 @@ public class Main {
 			person.printData();
 		}
 		
-		System.out.println(sample.size());
+//		System.out.println(sample.size());
 		
+		personA.buy(bike1);
 		
+//		オーナーあり
+		bike1.printData();
 		
-		
+//		オーナーなし
+		bus1.printData();
 		
 		
 		
