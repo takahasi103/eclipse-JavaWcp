@@ -165,7 +165,7 @@ public class Main {
 //			
 //			Person person = new Person(firstName, lastName, age);
 //			people.add(person);
-////			person.printData();
+//			person.printData();
 //		}
 //		
 //		System.out.println();
@@ -185,13 +185,13 @@ public class Main {
 		Person personB = new Person("山田", "花子", 25);
 		Person personC = new Person("ハリー", "F", "マイケル", 25);
 		
-		System.out.println(sample);
+//		System.out.println(sample);
 		sample.add(personA);
-		System.out.println(sample);
+//		System.out.println(sample);
 		sample.add(personB);
-		System.out.println(sample);
+//		System.out.println(sample);
 		sample.add(personC);
-		System.out.println(sample);
+//		System.out.println(sample);
 //		
 //		System.out.println("====================");
 //		sample.get(1).printData();
@@ -200,10 +200,13 @@ public class Main {
 //		sample.get(1).printData();
 		
 		for (Person person : sample) {
+			person.setWallet(1000);
 			person.printData();
 		}
 		
 		System.out.println(sample.size());
+		
+		
 		
 		
 		
