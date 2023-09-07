@@ -1,5 +1,11 @@
 package vehicle;
 
-public class Plane {
-
+public class Plane extends Vehicle {
+	
+	Plane(String name, String color) {
+		super(name, color);
+	}
+	
+	
+	
 }
